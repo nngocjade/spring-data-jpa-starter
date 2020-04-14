@@ -35,22 +35,27 @@ public class ProductService {
 	}
 
 	public List<Product> findByMadeIn(String madeIn){
+
 		return repo.findByMadein(madeIn);
 	}
 
 	public List<Product> findByPriceGreaterThan(float price){
+
 		return repo.findByPriceGreaterThan(price);
 	}
 
 	public Product findByName(String name){
+
 		return repo.findByName(name);
 	}
 
 	public List<Product> findByNameNotEqual(String name){
+
 		return repo.findByNameNot(name);
 	}
 
 	public void deleteByName(String name){
+
 		repo.deleteByName(name);
 	}
 }
