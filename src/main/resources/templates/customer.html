@@ -24,9 +24,9 @@
             <td th:text="${customer.firstname}">First Name</td>
             <td th:text="${customer.lastname}">Last Name</td>
             <td>
-                <a th:href="@{'/edit/' + ${customer.id}}">Edit</a>
+                <a th:href="@{'/customer/edit/' + ${customer.id}}">Edit</a>
                 &nbsp;&nbsp;&nbsp;
-                <a th:href="@{'/delete/' + ${customer.id}}">Delete</a>
+                <a th:href="@{'/customer/delete/' + ${customer.id}}">Delete</a>
             </td>
         </tr>
         </tbody>

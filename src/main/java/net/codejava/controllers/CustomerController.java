@@ -18,7 +18,6 @@ public class CustomerController {
     @Autowired
     private CustomerService service;
 
-
     @RequestMapping()
     public String viewHomePage(Model model) {
         //List<Product> listProducts = service.findByMadeIn("California");
